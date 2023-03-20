@@ -23,7 +23,7 @@ body {
 /* * ============================== */
 
 .navbar {
-	background: #FFCD48;
+	background: #078f29;
 }
 
 .navbar a {
@@ -115,7 +115,7 @@ aside .titulo {
 aside .indice a {
 	display: block;
 	margin-bottom: 10px;
-	color: #FFCD48;
+	color: #078f29;
 }
 
 /* * ============================== */
