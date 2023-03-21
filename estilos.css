@@ -3,7 +3,10 @@
 	padding: 0;
 	box-sizing: border-box;
 }
-
+form{
+	text-decoration: dashed;
+	background-image: -moz-repeating-radial-gradient();
+}
 a {
 	text-decoration: none;
 	outline: none;

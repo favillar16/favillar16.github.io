@@ -5,58 +5,81 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Resumen de Experiencia en HTML</title>
+	<link rel="stylesheet" href="estilos.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Noto+Sans+JP&display=swap" rel="stylesheet">
 </head>
-<style>
-    h1 {border: coral; font-family: Courier;}
-    h2 {font-family: Arial;}
-</style>
 <body>
-    <h1>Este es un titulo Principal en HTML</h1>
-    <p>El texto titulo principal se utiliza mediante la sentencia entre llaves h1.  </p>
-    
-    <h2 style="font-variant: small-caps;"> Parrafos </h2>
-    <p style="font-family: Arial;"> A <b>continuacion</b> tenemos los parrafos que son los que presentan la <i>informacion</i> <br> que se encuentra presentada en modo de texto en nuestra pagina. 
-    </p>
-    <n>
-    <h2> Imagenes </h2>
-    <img src="/imagenes/Cristiano Ronaldo.jpg" alt="Foto del Autor" width="150" height="200" >
-    <p style="font-style: oblique;"> Las imagenes pueden presentarse con en las paginas mediante el comando "img" donde se 
-        especfica la direccion <br>  en donde se encuentra dicha imagen ademas de un texto que indique el contenido de la imagen</p>
-    <h2>Formulario en HTML</h2>
-    <form method="GET" action="ejemplo1.php">
-	    <label>Nombre</label>
-	    <input type="text" name="nombre" value="">
-	    <br>
-	    <label>Curso</label>
-	    <br>
-	    <input type="radio" name="curso" value="1">
-	    <label>Primero</label>
-	    <br>
-	    <input type="radio" name="curso" value="2">
-	    <label>Segundo</label>
-	    <br>
-	    <input type="radio" name="curso" value="3">
-	    <label>Tercero</label>
-	    <br>
-	    <label>Becado?</label>
-	    <input type="checkbox" name="becado" value="si">
-	    <br>
-	    <label>Materias</label>
-	    <br>
-	    <input type="checkbox" name="materia1" value="mat001">
-	    <label>Calculo I</label>
-	    <br>
-	    <input type="checkbox" name="materia2" value="mat002">
-	    <label>LP III</label>
-	    <br>
-	    <input type="checkbox" name="materia3" value="mat003">
-	    <label>Base de datos II</label>
-	    <br>
-		<label>Contraseña</label>	    
-		<input type="password" name="password" value="">
-		<br>
-		<input type="reset" name="cancelar" value="Cancelar">
-		<input type="submit" name="enviar" value="Enviar">
-    </form>
+	<header>
+		<nav class="navbar">
+			<div class="contenedor">
+				<a href="media.html">Segunda Entrega</a>
+				<a href="#">Proximamente</a>
+				<a href="#">Proximamente</a>
+				<a href="#">Proximamente</a>
+			</div>
+		</nav>
+		<div class="contenedor-imagen">
+			<a href="https://es.nycgo.com/">
+				<img src="/PW1/imagenes/ny.jpg" alt="Neyork Header">
+			</a>
+		</div>
+	</header>
+	<main class="blog">
+		<div class="contenedor">
+		<aside>
+			<h3 class="titulo">Temas</h3>
+			<nav class="indice">
+				<a href="https://www.w3schools.com/html/default.asp">Conceptos Básicos</a>
+				<a href="https://www.w3schools.com/html/default.asp">Imágenes</a>
+				<a href="https://www.w3schools.com/html/default.asp">Tablas</a>
+				<a href="https://www.w3schools.com/html/default.asp">JavaScript</a>
+			</nav>
+		</aside>
+		<div class="contenido">
+			<div class="post">
+				<h1 class="titulo">Parrafos</h1>
+				<p class="fecha">Introducción a los Párrafos</p>
+				<p>
+					A <b>continuacion</b> tenemos los parrafos que son los que presentan la <i>informacion</i> <br> que se encuentra presentada en modo de texto en nuestra pagina. 
+				</p>
+			</div>
+			<div class="post">
+				<h1 class="titulo">Imagenes</h1>
+				<p class="fecha">Breve Introduccion a las Imágenes en HTML</p>
+				<img src="/imagenes/Cristiano Ronaldo.jpg" alt="Foto del Autor" width="150" height="200" >
+				<p>
+					Las imagenes pueden presentarse con en las paginas mediante el comando "img" donde se 
+					especfica la direccion <br>  en donde se encuentra dicha imagen ademas de un texto que indique el contenido de la imagen</p>
+				</p>
+			</div>
+			<div class="post">
+				<h1 class="titulo">Tablas</h1>
+				<p class="fecha">Esta seccion hace referencia a las tablas</p>
+				<p>A continuación podemos ver un ejemplo de tabla aplicado en html</p>
+				<table border="2">
+					<tr>
+						<th>Nombre</th>
+						<th>Apellido</th>
+						<th>C.I</th>
+					</tr>
+					<tr>
+						
+						<td>Fabrizio</td>
+						<td>Villar</td>
+						<td>5.746.680</td>
+					</tr>
+				</table>
+			</div>
+			<div class="post">
+				<h1 class="titulo"> JavaScript</h1>
+				<p class="fecha">Introduccion a JavaScript</p>
+				<button type="button" onclick="document.getElementById('reloj').innerHTML = Date()">Click Aqui</button>
+				<p id="reloj"></p>
+			</div>	
+		</div>	
+		</div>
+	</div>
+	</main>
 </body>
 </html>
