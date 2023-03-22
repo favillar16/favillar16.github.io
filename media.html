@@ -35,23 +35,23 @@
                 <p>Los formularios en html se utilizan para adquirir información, por lo general redirigidos a una página de .php. 
                     los mismos pueden ser del tipo "POST" o "GET". 
                 </p>
-            <form action="" >
+            <form>
                 <fieldset>
                 <legend>Este es un Formulario con Algunos ejemplos de Input</legend>
-                <label for="nombre">Digite su Nombre:</label>
+                <label>Digite su Nombre:</label>
                 <input type="text" placeholder="ej: Juan Pérez" >
                 <br>
                 <p>Con este tipo de Input podemos seleccionar archivos</p>
-                <input type="file"placeholder="Seleccione un Archivo">
+                <input type="file">
                 <br>
                 <p>Luego tenemos los Checkbox</p>
-                <label for="club">Seleccione su Club de Preferencia</label> 
+                <label >Seleccione su Club de Preferencia</label> 
                 <br>
-                <label for="chbx"><input type="checkbox" name="Manchester United" id="manu">Manchester United</label>
+                <label><input type="checkbox" name="Manchester United" id="manu">Manchester United</label>
                 <br>
-                <label for="chbx"><input type="checkbox" name="Manchester City" id="mcty">Manchester City</label>
+                <label><input type="checkbox" name="Manchester City" id="mcty">Manchester City</label>
                 <br>
-                <label for="chbx"><input type="checkbox" name="Chelsea" id="chl">Chelsea</label>
+                <label><input type="checkbox" name="Chelsea" id="chl">Chelsea</label>
                 <br>
                 <p>Los cuadros de Texto tambien forman parte de elementos en los formularios </p>
                 <br>
@@ -87,22 +87,23 @@
                         <source src="/imagenes/video.mp4" type="video/mp4">
                         <source src="/imagenes/video.mp4" type="video/mp4">
                     </video>
-                    <p class="fecha">Esta seccion es para los audios en HTML</p>
                     <p>Audios en HTML</p>
                     <audio controls autoplay >
                         <source src="/imagenes/audio.mp3" type="audio/mp3">
                         <source src="/imagenes/audio.mp3" type="audio/mp3">
                     </audio>
 
-                    <p class="fecha">Esta seccion es para los audios en HTML</p>
                     <p>Apartados yotube en páginas externas a youtube</p>
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/6Bh0iP5eyew"
-                     title="YouTube video player" frameborder="0"
-                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
-                     allowfullscreen>
-                    </iframe>
+                    <div class="contenedor">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6Bh0iP5eyew"
+                            title="YouTube video player" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+                            allowfullscreen>
+                        </iframe>
+                    </div>
             </div>    
         </div>
+    </div>
     </main>
 </body>
 </html>
